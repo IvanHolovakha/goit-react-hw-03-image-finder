@@ -1,4 +1,4 @@
-import { ProgressBar } from "react-loader-spinner"
+import { ProgressBar } from "react-loader-spinner";
 
 export const Loader = () => {
     return <ProgressBar

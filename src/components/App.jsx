@@ -2,8 +2,9 @@ import React, {Component} from "react";
 
 import { Searchbar } from "./Searchbar/Searchbar";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
-// import { Button } from "./Button/Button";
-import { Loader } from "./Loader/Loader";
+
+import { MainContainer } from "./App.styled";
+
 
 export class App extends Component {
   state = {
@@ -19,14 +20,14 @@ export class App extends Component {
   }
 
   render () {
-    const {searchQuery, status, page} = this.state;
+    const {searchQuery} = this.state;
     return (
-      <div>
+      <MainContainer>
         <Searchbar onSubmit={this.onSubmit}/>
         <ImageGallery searchQuery={searchQuery}/>
         {/* {status === 'resolved' && <Button onClick={this.onLoadMoreBtn}/>} */}
         {/* {status === 'pending' && <Loader/>} */}
-      </div>
+      </MainContainer>
     );
   }
 };
