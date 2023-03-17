@@ -14,12 +14,12 @@ export class Searchbar extends Component {
     onFormSubmit = (evt) => {
         evt.preventDefault();
 
-        if(this.state.value.trim() === '') {
+        if (this.state.value.trim() === '') {
             return;
         }
 
         this.props.onSubmit(this.state.value);
-        this.setState({value: ''});
+        this.setState({ value: '' });
     }
 
     render () {
