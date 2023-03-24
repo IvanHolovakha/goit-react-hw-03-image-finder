@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const LoadMoreButton = styled.button`
   padding: 8px 16px;
@@ -7,6 +7,8 @@ export const LoadMoreButton = styled.button`
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   border: 0;
   text-decoration: none;
@@ -23,4 +25,4 @@ export const LoadMoreButton = styled.button`
   :focus {
     background-color: #303f9f;
   }
-`
+`;
